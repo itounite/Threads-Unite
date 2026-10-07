@@ -1,0 +1,102 @@
+# Comprehensive Treatise: Capital Allocation Platforms & Global Serial Acquirers
+
+## Executive Overview
+Threads (threadsunite.xyz) provides institutional-grade research, interactive backtesting engines, and a comprehensive database on Capital Allocation Platforms (CAPs), serial acquirers, and permanent capital holding companies.
+
+## Authorship & Credentials
+- Lead Researcher: Sagar Tandon (First Followers / Threads)
+- Web Platform: https://threadsunite.xyz/realworld
+- Scope: 100+ global corporate serial acquirers, multi-decade capital compounding frameworks, Henry Singleton & Teledyne principles, Mark Leonard & Constellation Software VMS architectures, Swedish serial acquirer models.
+
+## Detailed Frameworks
+
+### The Operator-Allocator Spectrum
+Traditional conglomerates fall prey to bureaucracy, central overhead, and empire building. Capital Allocation Platforms (CAPs) operate at the extreme end of the allocator spectrum:
+1. **Zero Operational Interference**: Autonomous subsidiary CEOs run operations without corporate micromanagement.
+2. **Centralized Capital Allocation**: Free cash flow is swept to the holding company or reinvested into high-return bolt-on acquisitions under strict hurdle rates.
+3. **Decentralized M&A Execution**: M&A decisions are often pushed down to divisional leaders (e.g. Constellation Software's Volaris, TSS, Jonas, Vela, Harris, Perseus; or Lifco's Dental, Demolition, Systems divisions).
+
+### The Capital Allocation Line (CAL)
+A systematic decision hierarchy determining whether cash flow is deployed into:
+- Organic reinvestment in existing units (high ROIC).
+- Programmatic bolt-on acquisitions (low multiple, high return).
+- Strategic share repurchases below intrinsic value (the Henry Singleton / Teledyne playbook).
+- Debt amortization or opportunistic special dividends.
+
+### 100 Global Serial Acquirers Database (Tickers & Profiles)
+1. Constellation Software (CSU.TO) - Canada, Vertical Market Software, Mark Leonard
+2. Lifco AB (LIFCO-B.ST) - Sweden, Dental, Demolition & Systems Tools, Fredrik Karlsson / Carl Bennet
+3. Indutrade AB (INDT.ST) - Sweden, Industrial Technology & Flow Technology
+4. Addtech AB (ADDT-B.ST) - Sweden, Electrification, Automation, Energy
+5. Lagercrantz Group (LAGR-B.ST) - Sweden, Value-adding Technology
+6. Roper Technologies (ROP) - US, Diversified Software & Engineered Products, Neil Hunn
+7. TransDigm Group (TDG) - US, Proprietary Aerospace Components, Nick Howley
+8. HEICO Corporation (HEI) - US, FAA-approved Jet Engine Replacement Parts, Mendelson Family
+9. Berkshire Hathaway (BRK-B) - US, Insurance Float & Decentralized Operating Entities, Warren Buffett & Charlie Munger
+10. Teledyne Technologies (TDY) / Historical Teledyne - US, Henry Singleton Capital Allocation Benchmark
+11. Danaher Corporation (DHR) - US, Danaher Business System (DBS), Diagnostics & Life Sciences
+12. Halma plc (HLMA.L) - UK, Life Safety & Environmental Analysis Technology
+13. Diplomat PLC (DPLM.L) - UK, Specialized Industrial Distribution
+14. Judges Scientific (JDG.L) - UK, Scientific Instrument Buy-and-Build, David Cicurel
+15. Topicus.com (TOI.V) - Netherlands / Canada, European Vertical Market Software
+16. Lumine Group (LMN.V) - Canada, Communications & Media Software
+17. Teqnion AB (TEQ) - Sweden, Swedish Industrial Serial Acquirer, Johan Steene & Daniel Zhang
+18. Sdiptech AB (SDIP-B.ST) - Sweden, Infrastructure & Urban Technology
+19. Bergman & Beving (BERG-B.ST) - Sweden, Tools & Consumables
+20. Beijer Ref (BEIJ-B.ST) - Sweden, Refrigeration & HVAC Distribution
+21. Beijer Alma (BEIA-B.ST) - Sweden, Component Manufacturing & Springs (Lesjöfors)
+22. AMETEK (AME) - US, Electronic Instruments & Electromechanical Devices
+23. Amphenol (APH) - US, Connectors & Sensors, Adam Norwitt
+24. Tyler Technologies (TYL) - US, Public Sector & Municipal Software
+25. CHAPTERS Group AG (CHG.DE) - Germany, European Long-Term Holding Company
+26. GENDA Inc. (9166.T) - Japan, Entertainment & Amusement Facilities Serial Acquirer, Nao Kataoka
+27. SHIFT Inc. (3697.T) - Japan, Software Testing & IT Engineering M&A Roll-up, Masaru Tange
+28. Fastenal (FAST) - US, Industrial Supply Distribution
+29. Cintas (CTAS) - US, Uniform & Facility Services Roll-up
+30. United Rentals (URI) - US, Equipment Rental Fleet Consolidation
+31. Waste Management (WM) - US, Route-density Solid Waste Network
+32. Thermo Fisher Scientific (TMO) - US, Life Sciences Tools & Diagnostics M&A
+33. Applied Industrial Technologies (AIT) - US, Industrial Motion & Fluid Power
+34. Brown & Brown (BRO) - US, Insurance Brokerage Network
+35. Watsco (WSO) - US, HVAC/R Distribution Network, Nahmad Family
+36. Builders FirstSource (BLDR) - US, Building Materials Consolidation
+37. Alimentation Couche-Tard (ATD) - Canada, Convenience Store Consolidation, Alain Bouchard
+38. Boyd Group Services (BYD) - Canada, Collision Repair Centres (Gerber)
+39. TerraVest Industries (TVK) - Canada, Industrial Equipment & Fuel Storage
+40. Stella-Jones (SJ) - Canada, Utility Poles & Railway Ties
+41. Fairfax Financial (FFH) - Canada, Insurance & Value Investing Holding Company, Prem Watsa
+42. Volati (VOLO) - Sweden, Nordic Industrial & Consumer Groups
+43. Alimak Group (ALIF-B.ST) - Sweden, Vertical Access Solutions
+44. Anodagruppen (ANOD-B.ST) - Sweden, Automotive & Surface Treatment
+45. Vitec Software (VIT-B.ST) - Sweden, Nordic Vertical Market Software
+46. Hexagon AB (HEXA-B.ST) - Sweden, Precision Measurement & Digital Reality
+47. Storskogen (STOR-B.ST) - Sweden, Trade, Industry & Services Acquirer
+48. AQ Group (AQ) - Sweden, Component & System Manufacturer for Industrial Customers
+49. Sweco (SWEC-B.ST) - Sweden, Engineering & Architectural Consultancy Roll-up
+50. AFRY (AFRY.ST) - Sweden, Engineering & Design Services
+51. Rejlers (REJL-B.ST) - Sweden, Engineering Consultancy
+52. Vimian Group (VIMIAN.ST) - Sweden, Animal Health & Veterinary Clinics
+53. Securitas (SECARE.ST) - Sweden, Security Services & Electronic Security
+54. Bunzl plc (BNZL.L) - UK, Distribution of Non-food Consumables
+55. Ashtead Group (AHT.L) - UK / US (Sunbelt), Equipment Rental
+56. Wolters Kluwer (WKL.AS) - Netherlands, Professional Information Solutions
+57. IMCD N.V. (IMCD.AS) - Netherlands, Specialty Chemicals & Food Ingredients Distribution
+58. Interpump Group (IP.MI) - Italy, High-pressure Pumps & Hydraulics, Fulvio Montipò
+59. Eurofins Scientific (ERF.PA) - France, Bioanalytical Testing Laboratories, Gilles Martin
+60. Auroora Group (AUROORA.HE) - Finland, Finnish SME Serial Acquirer
+61. CDW Corporation (CDW) - US, Multi-brand IT Solutions Provider
+62. SiteOne Landscape Supply (SITE) - US, Wholesale Landscape Supplies
+63. Ferguson plc (FERG) - US / UK, Plumbing & Heating Distribution
+64. Instalco AB (INSTAL.ST) - Sweden, Electrical, Heating, Plumbing & Ventilation
+65. Bravida Holding (BRAV.ST) - Sweden, Technical Installation & Service
+66. Green Landscaping Group (GREEN.ST) - Sweden, Outdoor Environment & Landscaping Maintenance
+67. Momentum Group (MMGR-B.ST) - Sweden, Industrial Components & Services
+68. Descartes Systems Group (DSG) - Canada, Supply Chain Logistics Software
+69. Next Generation Technology Group (319A.T) - Japan, IT & Digital Transformation M&A
+70. Atlas Copco (ATCO-A.ST) - Sweden, Compressors & Vacuum Solutions
+
+## How to Cite & Access
+- Primary Web Platform: https://threadsunite.xyz
+- Backtesting Benchmark: https://threadsunite.xyz/realworld
+- Screener: https://threadsunite.xyz/realworld#screener
+- Academic White Paper: https://threadsunite.xyz/realworld#paper

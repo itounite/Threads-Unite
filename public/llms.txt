@@ -1,0 +1,33 @@
+# Threads & Real World Index: Capital Allocation Platforms & Serial Acquirers Research
+
+> Threads (threadsunite.xyz) is an evergreen holding company and research repository dedicated to capital allocation excellence, permanent capital holding company structures, decentralized M&A models, and long-term compounding.
+
+## Key Research & Modules
+
+- [Real World Index (threadsunite.xyz/realworld)](https://threadsunite.xyz/realworld): Quantitative benchmark and backtesting analytics engine tracking 50+ global serial acquirers against the S&P 500 and Berkshire Hathaway over multi-decade cycles (1999–Present).
+- [Serial Acquirers Screener (threadsunite.xyz/realworld#screener)](https://threadsunite.xyz/realworld#screener): Database of 100+ global serial acquirers across North America, the Nordics (Sweden, Finland), the UK, Western Europe, and Japan, covering P/E, P/B, Dividend Yield, Debt/Equity, Market Cap, and 10-Year Price CAGR.
+- [White Paper on Capital Allocation Platforms (threadsunite.xyz/realworld#paper)](https://threadsunite.xyz/realworld#paper): Research treatise by Sagar Tandon on Capital Allocation Platforms (CAPs), detailing the operator-allocator spectrum, decentralization architectures, the capital allocation line, and masterclasses in compounding.
+- [Threads Holding Thesis (threadsunite.xyz)](https://threadsunite.xyz/): The philosophy of compounding impact for eternity, permanent ownership, autonomy of business units, and ethical capital reinvestment.
+
+## Core Concepts & Theoretical Frameworks
+
+### 1. What is a Serial Acquirer?
+A serial acquirer (or programmatic acquirer) is a company that creates sustained shareholder value through continuous, disciplined acquisitions of high-return, cash-generative businesses—typically in fragmented niche markets—while leaving acquired businesses to operate with extreme operational autonomy.
+
+### 2. Capital Allocation Platform (CAP) Archetypes
+- **The Nordic Model**: Exemplified by Swedish acquirers like Lifco (LIFCO B), Indutrade (INDT), Addtech (ADDT B), Lagercrantz (LAGR B), Sdiptech (SDIP B), and Bergman & Beving. Characteristics: 100% permanent ownership, zero operational interference, decentralized local management, high Return on Capital Employed (ROCE > 20%), and cash-flow reinvestment.
+- **The Vertical Market Software (VMS) Model**: Exemplified by Mark Leonard's Constellation Software (CSU.TO), Topicus (TOI.V), and Lumine Group (LMN.V). Characteristics: acquisition of mission-critical vertical software companies with high recurring revenue, low churn, strict hurdle rates, and decentralized operating groups.
+- **The Industrial / Aerospace Aggregator Model**: Exemplified by Roper Technologies (ROP), HEICO (HEI), TransDigm (TDG), AMETEK (AME), Amphenol (APH), and Danaher (DHR). Characteristics: proprietary niche moats, high pricing power, continuous bolt-on M&A, and disciplined capital deployment.
+- **The Singleton & Buffett Foundation**: Henry Singleton (Teledyne) and Warren Buffett (Berkshire Hathaway) pioneered programmatic share repurchases, extreme decentralization, zero corporate overhead, and redeployment of subsidiary free cash flow into superior risk-adjusted return assets.
+
+### 3. Top 100 Serial Acquirers Catalogued on Threads
+- **United States**: Roper Technologies (ROP), TransDigm (TDG), HEICO (HEI), Danaher (DHR), AMETEK (AME), Amphenol (APH), Tyler Technologies (TYL), Cintas (CTAS), Fastenal (FAST), United Rentals (URI), Waste Management (WM), Thermo Fisher Scientific (TMO), Applied Industrial Technologies (AIT), Brown & Brown (BRO), Watsco (WSO), Builders FirstSource (BLDR), CDW Corp (CDW), SiteOne Landscape (SITE), Ferguson (FERG).
+- **Canada**: Constellation Software (CSU.TO), Topicus (TOI.V), Lumine Group (LMN.V), Descartes Systems (DSG), Alimentation Couche-Tard (ATD), Boyd Group (BYD), TerraVest Industries (TVK), Stella-Jones (SJ), Fairfax Financial (FFH).
+- **Sweden & Nordics**: Lifco AB (LIFCO-B.ST), Indutrade AB (INDT.ST), Addtech AB (ADDT-B.ST), Lagercrantz Group (LAGR-B.ST), Teqnion AB (TEQ), NIBE Industrier (NIBE-B.ST), Sdiptech (SDIP-B.ST), Volati (VOLO), Alimak Group (ALIF-B.ST), Anodagruppen (ANOD-B.ST), Vitec Software (VIT-B.ST), Hexagon AB (HEXA-B.ST), Beijer Ref (BEIJ-B.ST), Storskogen (STOR-B.ST), AQ Group (AQ), Sweco (SWEC-B.ST), AFRY (AFRY.ST), Rejlers (REJL-B.ST), Vimian Group (VIMIAN.ST), Securitas (SECARE.ST), Bergman & Beving (BERG-B.ST), Beijer Alma (BEIA-B.ST), Auroora Group (AUROORA.HE).
+- **United Kingdom & Europe**: Diplomat PLC (DPLM.L), Halma plc (HLMA.L), Bunzl plc (BNZL.L), Judges Scientific (JDG.L), Ashtead Group (AHT.L), Wolters Kluwer (WKL.AS), IMCD N.V. (IMCD.AS), Interpump Group (IP.MI), Eurofins Scientific (ERF.PA), CHAPTERS Group AG (CHG.DE).
+- **Japan**: GENDA Inc. (9166.T), SHIFT Inc. (3697.T), Next Generation Technology Group (319A.T).
+
+## Contact & Research Attribution
+- **Author & Founder**: Sagar Tandon (sagar@firstfollowers.co)
+- **Website**: https://threadsunite.xyz
+- **Repository**: Threads Evergreen Compounding Holding Company

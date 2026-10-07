@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;750&family=Space+Grotesk:wght@420;550;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-space: "Space Grotesk", sans-serif;
+  
+  --color-ink: #000000;
+  --color-paper: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans antialiased selection:bg-ink selection:text-paper;
+  }
+}
+
+.rigid-border {
+  @apply border-ink;
+}
+
+.graph-paper {
+  background-color: #fafaf9;
+  background-image: 
+    linear-gradient(rgba(28, 25, 23, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 25, 23, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+

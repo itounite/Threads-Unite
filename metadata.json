@@ -1,0 +1,8 @@
+{
+  "name": "Threads",
+  "description": "Evergreen holding company, research repository on Capital Allocation Platforms (CAPs), and interactive directory/screener for 100+ global serial acquirers (Constellation Software, Lifco, Indutrade, Roper, Teledyne, Berkshire Hathaway).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
