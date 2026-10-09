@@ -965,16 +965,6 @@ export default function App() {
                 Home
               </button>
               <button 
-                onClick={() => navigateTo("realworld")}
-                className={`pb-0.5 border-b cursor-pointer transition-all ${
-                  view === "realworld" 
-                    ? isDarkMode ? "text-[#fafaf9] border-[#fafaf9]" : "text-[#1c1917] border-[#1c1917]" 
-                    : isDarkMode ? "border-transparent hover:text-[#fafaf9]" : "border-transparent hover:text-[#1c1917]"
-                }`}
-              >
-                Real World Index
-              </button>
-              <button 
                 onClick={() => navigateTo("writings")}
                 className={`pb-0.5 border-b cursor-pointer transition-all ${
                   view === "writings" 
@@ -1044,14 +1034,17 @@ export default function App() {
               
               {/* Navigation recommendation */}
               <div className="flex flex-wrap gap-4 items-center justify-center">
-                <button 
-                  onClick={() => navigateTo("realworld")}
-                  className={`text-[10px] uppercase tracking-widest font-bold px-4 py-2 cursor-pointer transition-all rounded-sm ${
+                <a 
+                  href="https://compounders.ai.studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-[10px] uppercase tracking-widest font-bold px-4 py-2 cursor-pointer transition-all rounded-sm inline-flex items-center gap-1.5 ${
                     isDarkMode ? "bg-[#fafaf9] text-[#0c0a09] hover:bg-stone-200" : "bg-[#1c1917] text-[#fafaf9] hover:bg-stone-800"
                   }`}
                 >
-                  Real World Index →
-                </button>
+                  <span>Compounders.cc</span>
+                  <ArrowUpRight size={12} />
+                </a>
                 <button 
                   onClick={() => navigateTo("writings")}
                   className={`text-[10px] uppercase tracking-widest font-bold border px-4 py-2 cursor-pointer transition-all rounded-sm ${
