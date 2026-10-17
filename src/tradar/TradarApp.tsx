@@ -426,9 +426,16 @@ export function TradarApp({
                   </a>
                 </div>
                 
-                <h3 className="font-serif font-bold text-base sm:text-lg text-inherit">
-                  Oskar Hiekkanen, Founder
-                </h3>
+                <div>
+                  <h3 className="font-serif font-bold text-base sm:text-lg text-inherit">
+                    Oskar Hiekkanen, Founder
+                  </h3>
+                  <p className={`font-mono text-xs sm:text-sm font-semibold tracking-wide mt-0.5 ${
+                    isDarkMode ? "text-stone-300" : "text-stone-700"
+                  }`}>
+                    EIR (Entrepreneur In Residence), THREADS
+                  </p>
+                </div>
 
                 <p className={`font-serif text-sm sm:text-base leading-relaxed font-normal ${
                   isDarkMode ? "text-[#e4e4e7]" : "text-[#292524]"
@@ -467,14 +474,21 @@ export function TradarApp({
                     isDarkMode ? "border-[#3f3f46] bg-[#27272a]/50" : "border-[#1c1917] bg-white"
                   }`}>
                     <div className="space-y-1.5 mb-3">
-                      <div className="flex flex-wrap items-baseline justify-between gap-1.5">
-                        <div className="flex flex-wrap items-baseline gap-2">
-                          <span className="font-serif font-bold text-sm sm:text-base text-inherit">Oskar Hiekkanen</span>
-                          <span className={`font-mono text-[10px] uppercase font-semibold ${
+                      <div className="flex flex-wrap items-start justify-between gap-1.5">
+                        <div className="space-y-0.5">
+                          <div className="flex flex-wrap items-baseline gap-2">
+                            <span className="font-serif font-bold text-sm sm:text-base text-inherit">Oskar Hiekkanen</span>
+                            <span className={`font-mono text-[10px] uppercase font-semibold ${
+                              isDarkMode ? "text-stone-400" : "text-stone-600"
+                            }`}>
+                              Founder
+                            </span>
+                          </div>
+                          <div className={`font-mono text-[10px] uppercase tracking-wide font-medium ${
                             isDarkMode ? "text-stone-400" : "text-stone-600"
                           }`}>
-                            Founder, TRÅDAR
-                          </span>
+                            EIR (Entrepreneur In Residence), THREADS
+                          </div>
                         </div>
                         <a 
                           href="https://www.linkedin.com/in/oskarhiekkanen/" 
