@@ -4,6 +4,7 @@ import { ArrowUpRight, Lock, Unlock, Eye, EyeOff, Search, BookOpen, Layers, User
 import { WhitepaperView } from "./components/WhitepaperView";
 import { NordicBackground } from "./components/NordicBackground";
 import { RealWorldApp } from "./realworld/RealWorldApp";
+import { TradarApp } from "./tradar/TradarApp";
 
 export function ThreadsLogo({ className = "w-8 h-8" }: { className?: string }) {
   // Generates 115 deterministic intersecting straight lines for a real hand-drawn scribble texture
@@ -504,16 +505,22 @@ export function SerialAcquirersEdgeComparison() {
 }
 
 export default function App() {
-  const [view, setView] = useState<"home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld">("home");
+  const [view, setView] = useState<"home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld" | "blush" | "cherry" | "tradar.fi">("home");
   
+  // Active sub-page in Tradar
+  const [tradarSubView, setTradarSubView] = useState<"home" | "about">("home");
+
   // Active sub-page in Ito wall
   const [itoSubView, setItoSubView] = useState<"index" | "solo" | "screener" | "stealth">("screener");
 
   // Router logic to synchronize window pathname with view status
-  const navigateTo = (newView: "home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld", subView?: "index" | "solo" | "screener" | "stealth") => {
+  const navigateTo = (newView: "home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld" | "blush" | "cherry" | "tradar.fi", subView?: string) => {
     setView(newView);
-    if (subView) {
-      setItoSubView(subView);
+    if (newView === "ito" && subView) {
+      setItoSubView(subView as "index" | "solo" | "screener" | "stealth");
+    }
+    if (newView === "tradar.fi" && subView) {
+      setTradarSubView(subView as "home" | "about");
     }
     
     // Smooth HTML5 History push
@@ -522,6 +529,8 @@ export default function App() {
       p = `/${newView}`;
       if (newView === "ito" && subView) {
         p = `/ito/${subView}`;
+      } else if (newView === "tradar.fi") {
+        p = subView === "about" ? "/tradar.fi/about" : "/tradar.fi";
       }
     }
     window.history.pushState(null, "", p);
@@ -535,6 +544,17 @@ export default function App() {
       
       if (p.startsWith("/realworld") || p === "/rwi" || h === "#realworld" || h === "#rwi" || host.includes("realworld")) {
         setView("realworld");
+      } else if (p === "/blush" || h === "#blush") {
+        setView("blush");
+      } else if (p === "/cherry" || h === "#cherry") {
+        setView("cherry");
+      } else if (p.startsWith("/tradar.fi") || p.startsWith("/tradar") || h.includes("tradar") || host.includes("tradar")) {
+        setView("tradar.fi");
+        if (p.includes("/about") || h.includes("about")) {
+          setTradarSubView("about");
+        } else {
+          setTradarSubView("home");
+        }
       } else if (p === "/rethink" || h === "#rethink") {
         setView("rethink");
       } else if (p === "/ito/index" || h === "#index") {
@@ -579,6 +599,12 @@ export default function App() {
       document.title = "Capital Allocation Platforms (CAPs) Treatise | Sagar Tandon";
     } else if (view === "rethink") {
       document.title = "Rethinking the West | Macroeconomic Decentralization";
+    } else if (view === "blush") {
+      document.title = "Blush | Threads";
+    } else if (view === "cherry") {
+      document.title = "Cherry | Threads";
+    } else if (view === "tradar.fi") {
+      document.title = "Tradar | Threads";
     }
   }, [view]);
 
@@ -918,6 +944,17 @@ export default function App() {
   });
 
   const hasAnyMatches = segmentedEssays.some(seg => seg.items.length > 0);
+
+  if (view === "tradar.fi") {
+    return (
+      <TradarApp 
+        onBackToThreads={() => navigateTo("home")}
+        initialSubView={tradarSubView}
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
+      />
+    );
+  }
 
   return (
     <div className={`relative h-[100dvh] overflow-hidden font-sans flex flex-col justify-between transition-colors duration-300 ${
@@ -2153,6 +2190,18 @@ export default function App() {
             >
               <RealWorldApp onBackToThreads={() => navigateTo("home")} />
             </motion.div>
+          )}
+
+          {/* 8. EMPTY PAGES: BLUSH, CHERRY */}
+          {(view === "blush" || view === "cherry") && (
+            <motion.div
+              key={`${view}-view`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="w-full h-full min-h-[300px]"
+            />
           )}
 
         </AnimatePresence>
