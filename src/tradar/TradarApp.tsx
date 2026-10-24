@@ -132,7 +132,7 @@ export function TradarApp({
   const [copiedSagarEmail, setCopiedSagarEmail] = useState(false);
 
   const handleCopyOskarEmail = () => {
-    navigator.clipboard.writeText("oskar.hiekkanen@helsinki.fi");
+    navigator.clipboard.writeText("oh@tradar.fi");
     setCopiedOskarEmail(true);
     setTimeout(() => setCopiedOskarEmail(false), 2000);
   };
@@ -281,7 +281,7 @@ export function TradarApp({
                   About TRÅDAR →
                 </button>
                 <a 
-                  href="https://compounders.ai.studio/"
+                  href="http://compounders.cc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`text-[10px] uppercase tracking-widest font-bold border px-3.5 py-2 transition-all rounded-sm inline-flex items-center gap-1.5 shadow-xs ${
@@ -501,12 +501,12 @@ export function TradarApp({
                         </a>
                       </div>
                       <a 
-                        href="mailto:oskar.hiekkanen@helsinki.fi"
+                        href="mailto:oh@tradar.fi"
                         className={`font-mono text-xs block transition-colors ${
                           isDarkMode ? "text-[#d4d4d8] hover:text-[#38bdf8]" : "text-[#44403c] hover:text-[#1d4ed8]"
                         }`}
                       >
-                        oskar.hiekkanen@helsinki.fi
+                        oh@tradar.fi
                       </a>
                     </div>
                     <div className="pt-2 border-t border-stone-200 dark:border-stone-700/60 flex items-center">

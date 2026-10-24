@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, Lock, Unlock, Eye, EyeOff, Search, BookOpen, Layers, User, Home as HomeIcon, Check, X, Bookmark, Mail, Copy, Send, Sun, Moon } from "lucide-react";
 import { WhitepaperView } from "./components/WhitepaperView";
+import { WhatWeDoView } from "./components/WhatWeDoView";
 import { NordicBackground } from "./components/NordicBackground";
 import { RealWorldApp } from "./realworld/RealWorldApp";
 import { TradarApp } from "./tradar/TradarApp";
@@ -505,7 +506,7 @@ export function SerialAcquirersEdgeComparison() {
 }
 
 export default function App() {
-  const [view, setView] = useState<"home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld" | "blush" | "cherry" | "tradar.fi">("home");
+  const [view, setView] = useState<"home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld" | "blush" | "cherry" | "tradar.fi" | "whatwedo">("home");
   
   // Active sub-page in Tradar
   const [tradarSubView, setTradarSubView] = useState<"home" | "about">("home");
@@ -514,7 +515,7 @@ export default function App() {
   const [itoSubView, setItoSubView] = useState<"index" | "solo" | "screener" | "stealth">("screener");
 
   // Router logic to synchronize window pathname with view status
-  const navigateTo = (newView: "home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld" | "blush" | "cherry" | "tradar.fi", subView?: string) => {
+  const navigateTo = (newView: "home" | "rethink" | "ito" | "writings" | "about" | "whitepaper" | "realworld" | "blush" | "cherry" | "tradar.fi" | "whatwedo", subView?: string) => {
     setView(newView);
     if (newView === "ito" && subView) {
       setItoSubView(subView as "index" | "solo" | "screener" | "stealth");
@@ -526,11 +527,14 @@ export default function App() {
     // Smooth HTML5 History push
     let p = "/";
     if (newView !== "home") {
-      p = `/${newView}`;
-      if (newView === "ito" && subView) {
+      if (newView === "whatwedo") {
+        p = "/what-we-do";
+      } else if (newView === "ito" && subView) {
         p = `/ito/${subView}`;
       } else if (newView === "tradar.fi") {
         p = subView === "about" ? "/tradar.fi/about" : "/tradar.fi";
+      } else {
+        p = `/${newView}`;
       }
     }
     window.history.pushState(null, "", p);
@@ -555,6 +559,8 @@ export default function App() {
         } else {
           setTradarSubView("home");
         }
+      } else if (p === "/what-we-do" || p === "/whatwedo" || h === "#what-we-do" || h === "#whatwedo" || h === "#what-do-we-do") {
+        setView("whatwedo");
       } else if (p === "/rethink" || h === "#rethink") {
         setView("rethink");
       } else if (p === "/ito/index" || h === "#index") {
@@ -591,6 +597,8 @@ export default function App() {
     if (typeof document === "undefined") return;
     if (view === "home") {
       document.title = "Threads | Compound Impact for Eternity & Capital Allocation";
+    } else if (view === "whatwedo") {
+      document.title = "What We Do | Threads Holding Company";
     } else if (view === "writings") {
       document.title = "Writings & Philosophy | Threads Holding Company";
     } else if (view === "about") {
@@ -1002,14 +1010,14 @@ export default function App() {
                 Home
               </button>
               <button 
-                onClick={() => navigateTo("writings")}
+                onClick={() => navigateTo("whatwedo")}
                 className={`pb-0.5 border-b cursor-pointer transition-all ${
-                  view === "writings" 
+                  view === "whatwedo" 
                     ? isDarkMode ? "text-[#fafaf9] border-[#fafaf9]" : "text-[#1c1917] border-[#1c1917]" 
                     : isDarkMode ? "border-transparent hover:text-[#fafaf9]" : "border-transparent hover:text-[#1c1917]"
                 }`}
               >
-                Writings
+                What We Do?
               </button>
               <button 
                 onClick={() => navigateTo("about")}
@@ -1072,7 +1080,7 @@ export default function App() {
               {/* Navigation recommendation */}
               <div className="flex flex-wrap gap-4 items-center justify-center">
                 <a 
-                  href="https://compounders.ai.studio/"
+                  href="http://compounders.cc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`text-[10px] uppercase tracking-widest font-bold px-4 py-2 cursor-pointer transition-all rounded-sm inline-flex items-center gap-1.5 ${
@@ -1083,14 +1091,14 @@ export default function App() {
                   <ArrowUpRight size={12} />
                 </a>
                 <button 
-                  onClick={() => navigateTo("writings")}
+                  onClick={() => navigateTo("whatwedo")}
                   className={`text-[10px] uppercase tracking-widest font-bold border px-4 py-2 cursor-pointer transition-all rounded-sm ${
                     isDarkMode 
                       ? "border-[#3f3f46] bg-[#1c1917]/80 hover:bg-[#1c1917] text-[#fafaf9]" 
                       : "border-[#d6d3d1] hover:border-[#1c1917] bg-white/80 hover:bg-white text-[#1c1917]"
                   }`}
                 >
-                  Writings →
+                  What We Do? →
                 </button>
                 <button 
                   onClick={() => navigateTo("about")}
@@ -1987,7 +1995,15 @@ export default function App() {
             </motion.div>
           )}
 
-          {/* 4. WRITINGS VIEW */}
+          {/* WHAT WE DO VIEW */}
+          {view === "whatwedo" && (
+            <WhatWeDoView
+              isDarkMode={isDarkMode}
+              onNavigateToWhitepaper={() => navigateTo("whitepaper")}
+            />
+          )}
+
+          {/* 4. WRITINGS VIEW (Hidden from main navigation) */}
           {view === "writings" && (
             <motion.div
               key="writings-view"
@@ -2145,9 +2161,8 @@ export default function App() {
                 </span>
                 
                 <div className="pt-1 flex flex-col items-center">
-                  <button 
-                    type="button"
-                    onClick={() => setIsContactModalOpen(true)}
+                  <a 
+                    href="mailto:s@threadsunite.xyz"
                     className={`inline-flex items-center gap-2.5 font-mono text-xs sm:text-sm font-semibold transition-all cursor-pointer group border px-5 py-2.5 rounded-sm shadow-xs ${
                       isDarkMode 
                         ? "border-[#fafaf9] bg-[#1c1917] text-[#fafaf9] hover:bg-[#fafaf9] hover:text-[#0c0a09]" 
@@ -2158,7 +2173,7 @@ export default function App() {
                       isDarkMode ? "text-[#fafaf9] group-hover:text-[#0c0a09]" : "text-[#1c1917] group-hover:text-[#fafaf9]"
                     }`} />
                     <span>s@threadsunite.xyz</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </motion.div>
